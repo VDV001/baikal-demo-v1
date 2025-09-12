@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Baikal Footer Block</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(180deg, #5096eb 0%, #ace4fb 100%);
+  color: #224a8a;
+  line-height: 1.4;
+}
+
+.bottom-block {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.content-row {
+  display: flex;
+  gap: 80px;
+  padding-left: 80px;
+  align-items: center;
+}
+
+.bottles {
+  display: flex;
+  gap: 100px;
+  align-items: flex-end;
+}
+
+.bottle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.bottle img {
+  display: block;
+  height: auto;
+}
+
+.bottle:nth-child(1) img {
+  width: 80px;
+}
+
+.bottle:nth-child(2) img {
+  width: 120px;
+}
+
+.bottle:nth-child(3) img {
+  width: 130px;
+}
+
+.bottle span {
+  font-weight: 500;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: #224a8a;
+}
+
+.contacts {
+  max-width: 400px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #224a8a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts p {
+  margin: 14px 0;
+}
+
+.contacts a {
+  color: #224a8a;
+  text-decoration: none;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+  text-decoration: underline;
+}
+
+.contacts-small {
+  font-weight: 400;
+  font-size: 0.65rem;
+  color: #224a8a;
+  margin-top: 16px;
+  line-height: 1.2;
+}
+
+.contacts-small strong {
+  font-weight: 600;
+  color: #224a8a;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.policies-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 20px;
+}
+
+.policies-container span {
+  display: block;
+  font-weight: 400;
+  color: #224a8a;
+  font-size: 0.65rem;
+  line-height: 1.2;
+}
+
+.bottom-block {
+  position: relative;
+  min-height: 600px;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 32px;
+  font-size: 0.9rem;
+  color: #687eab;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #4173b0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  text-decoration: underline;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .footer-copyright {
+  position: absolute;
+  right: 32px;
+  bottom: 16px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .bottom-block {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 32px;
+  }
+
+  .content-row {
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bottles {
+    justify-content: center;
+    gap: 56px;
+    align-items: center;
+  }
+
+  .bottle:nth-child(1) img {
+    width: 56px;
+  }
+
+  .bottle:nth-child(2) img {
+    width: 80px;
+  }
+
+  .bottle:nth-child(3) img {
+    width: 110px;
+  }
+
+  .contacts {
+    max-width: 100%;
+    font-size: 0.95rem;
+    padding-left: 0;
+  }
+
+  .footer {
+    padding-left: 0;
+    gap: 24px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer-copyright {
+    white-space: normal;
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-block {
+    padding: 24px 16px 40px;
+    gap: 24px;
+  }
+
+  .content-row {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bottles {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bottle:nth-child(1) img {
+    width: 40px;
+  }
+
+  .bottle:nth-child(2) img {
+    width: 56px;
+  }
+
+  .bottle:nth-child(3) img {
+    width: 80px;
+  }
+
+  .contacts {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+}
+</style>
+</head>
+<body>
+<section class="bottom-block">
+  <div class="content-row">
+    <div class="bottles">
+      <div class="bottle">
+        <img src="Irk_06L.png" alt="Бутылка 0.6л" />
+        <span>0,6 л</span>
+      </div>
+      <div class="bottle">
+        <img src="irk_1,25L.png" alt="Бутылка 1.25л" />
+        <span>1,25 л</span>
+      </div>
+      <div class="bottle">
+        <img src="Irk_2L.png" alt="Бутылка 2л" />
+        <span>2 л</span>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <p>Задать вопрос по почте<br /><a href="mailto:112@baikal-sea.com">112@baikal-sea.com</a></p>
+      <p>Горячая линия<br /><a href="tel:88003331616">8 800 333-16-16</a></p>
+      <p class="contacts-small">
+        <strong>Политика обработки персональных данных</strong><br />
+        <span class="policies-container">
+          <span>Политика Оператора ПДН ИЗРМВ</span>
+          <span>Политика Оператора ПДН МБ</span>
+          <span>Политика Оператора ПДН ОИ</span>
+          <span>Политика Оператора ПДН БАЙКАЛ</span>
+          <span>Политика Оператора ПДН СМ</span>
+          <span>Политика Оператора ПДН ИДК</span>
+        </span>
+      </p>
+    </div>
+  </div>
+  <footer class="footer">
+    <nav class="footer-links">
+      <a href="#">
+        <svg class="footer-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect x="4" y="4" width="12" height="12" stroke="#224A8A" stroke-width="2" rx="3"/>
+          <path d="M7 7L13 13" stroke="#224A8A" stroke-width="2" stroke-linecap="round"/>
+          <path d="M13 7L7 13" stroke="#224A8A" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        BAIKALSEA Company
+      </a>
+      <a href="#">
+        <svg class="footer-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect x="4" y="4" width="12" height="12" stroke="#224A8A" stroke-width="2" rx="3"/>
+          <path d="M7 7L13 13" stroke="#224A8A" stroke-width="2" stroke-linecap="round"/>
+          <path d="M13 7L7 13" stroke="#224A8A" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        BAIKALSK
+      </a>
+      <a href="#">
+        <svg class="footer-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect x="4" y="4" width="12" height="12" stroke="#224A8A" stroke-width="2" rx="3"/>
+          <path d="M7 7L13 13" stroke="#224A8A" stroke-width="2" stroke-linecap="round"/>
+          <path d="M13 7L7 13" stroke="#224A8A" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        NASH BAIKAL
+      </a>
+    </nav>
+    <div class="footer-copyright">
+      © 2025 BAIKALSEA Company
+    </div>
+  </footer>
+</section>
+</body>
+</html>
