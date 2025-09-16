@@ -39,7 +39,7 @@
 ### Установка
 
 ```bash
-git clone <URL_репозитория>
+git clone https://github.com/VDV001/baikal-demo-v1.git
 cd baikal-footer-react-v1
 npm install
 ```
