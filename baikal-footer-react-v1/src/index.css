@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #5096eb 0%, #ace4fb 100%);
+  color: #224a8a;
+  line-height: 1.4;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
